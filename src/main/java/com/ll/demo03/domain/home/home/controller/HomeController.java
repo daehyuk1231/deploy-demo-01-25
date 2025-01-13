@@ -12,12 +12,10 @@ public class HomeController {
     @Value("${custom.secret.key}")
     private String secretKey;
 
-    public String test() {return "Hello";}
-
     @GetMapping("/")
     @ResponseBody
     public String showMain() {
-        return "Hello, World!!!!!, on " + siteName + "Success";
+        return "Hello, World!!!!! Deploy!!!!!!!!, on " + siteName ;
     }
 
     @GetMapping("/secretKey")
