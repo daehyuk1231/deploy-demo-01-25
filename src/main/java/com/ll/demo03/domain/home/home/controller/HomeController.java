@@ -12,6 +12,8 @@ public class HomeController {
     @Value("${custom.secret.key}")
     private String secretKey;
 
+    public String test() {return "Hello";}
+
     @GetMapping("/")
     @ResponseBody
     public String showMain() {
